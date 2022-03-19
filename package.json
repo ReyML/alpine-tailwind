@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "alpinejs": "^3.9.1",
+    "esbuild": "^0.14.27"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+        "build-css": "npx tailwindcss -i ./src/styles.css -o ./dist/style.css --watch",
+        "alpinjs-dev-w": "npx esbuild src/index.js --outfile=dist/bundle.js --bundle --watch"
+  }
+}
